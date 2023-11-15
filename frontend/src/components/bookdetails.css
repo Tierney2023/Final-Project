@@ -1,0 +1,42 @@
+
+
+.book_details_header{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+
+.book_details_image img{
+   min-width: 500px;
+   max-height: 500px;
+}
+
+.book_details_image{
+    padding-right: 100px;
+
+}
+
+
+
+.book_details_body{
+    display: flex;
+    flex-direction: row;
+}
+
+.section_header{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.book_details_content .book_info{
+    font-size: 25px;
+}
+
+.section{
+    padding:10px
+}
+
+.book_container{
+    max-width: 150px;
+}
