@@ -25,9 +25,7 @@ const BookDetails = () => {
   return (
     <div className="book_details_container">
 
-      <div className="book_details_header">
-        <h2 >{book?.title}</h2>
-      </div>
+     
 
       <div className="book_details_body">
 
@@ -36,12 +34,15 @@ const BookDetails = () => {
         </div>
 
         <div className="book_details_content">
-
+        <div className="book_details_header">
+        {book?.title}
+      </div>
 
           <div className="section">
-            <span className="section_header">Authors: </span>
+            <span className="book_info">by: </span>
             <span className="book_info">{book?.authors}</span>
           </div>
+          <br /> <br /><br />
 
 
           <div className="section">
