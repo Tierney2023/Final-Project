@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import axios from "axios";
@@ -31,6 +33,8 @@ const responsive = {
 const Home = () => {
 
   const [books, setBooks] = useState([]);
+  const navigate = useNavigate();
+
 
   useEffect((e) => {
     axios
@@ -72,7 +76,8 @@ const Home = () => {
             filteredData.map((item) => {
 
               return    <div className="card" key={item.id}>
-                    <img src={item.image_url} alt="#" />
+                    <img src={item.image_url} alt="#" onClick={() => navigate(`/book/${item.id}`)}
+/>
                     <h2>{item.title}</h2>
                   </div>               
             })

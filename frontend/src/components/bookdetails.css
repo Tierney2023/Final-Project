@@ -13,6 +13,9 @@
 .book_details_image img{
    min-width: 700px;
    max-height: 800px;
+   border-style: solid;
+   border-color: grey;
+   border-width: 1px;
 }
 
 .book_details_image{
@@ -36,6 +39,8 @@
 
 .book_details_content .book_info{
     font-size: 30px;
+    text-align: justify;
+
 }
 
 
