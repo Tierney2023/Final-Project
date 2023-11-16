@@ -1,4 +1,6 @@
-
+.book_details_container{
+    min-height: 77vh;
+}
 
 .book_details_header{
     font-size: 40px;
