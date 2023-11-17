@@ -73,12 +73,12 @@ const Home = () => {
         <Carousel showDots={true} responsive={responsive}>
 
           {
-            filteredData.map((item) => {
+            filteredData.map((book) => {
 
-              return    <div className="card" key={item.id}>
-                    <img src={item.image_url} alt="#" onClick={() => navigate(`/book/${item.id}`)}
+              return    <div className="card" key={book.id}>
+                    <img src={book.image_url} alt="#" onClick={() => navigate(`/book/${book.id}`)}
 />
-                    <h2>{item.title}</h2>
+                    <h2>{book.title}</h2>
                   </div>               
             })
           }

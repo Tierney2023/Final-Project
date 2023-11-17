@@ -23,6 +23,7 @@
     display: flex;
 }
 
+
 .text p{
     text-align: center;
     color: darkslategrey;
@@ -56,8 +57,10 @@ Carousel{
 
 .card{
     padding-right: 50px;
+    
 }
 .card h2{
+
     
     color: #874b47;
 }

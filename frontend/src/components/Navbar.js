@@ -39,7 +39,7 @@ export const Navbar = ({ setResults, sorted }) => {
 
     <div className="navbar">
       <nav className="bar">
-        <h3 className="logo">Bookmark</h3>
+        <p className="logo"><span className="b_logo">B</span>ookmark</p>
         <div className="search_bar">
           <input
             className="search"
@@ -48,9 +48,11 @@ export const Navbar = ({ setResults, sorted }) => {
             onChange={(e) => handleChange(e.target.value)} />
         </div>
         <ul>
+          <span className="b_logo">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/collection">Collection</Link></li>
           <li><Link to="/account">Account</Link></li>
+          </span>
         </ul>
       </nav>
     </div >
