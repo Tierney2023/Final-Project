@@ -1,9 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useNavigate } from 'react';
 import "./account.css";
 
 
 const Account = () => {
     const [action, setAction] = useState("Sign Up");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [errors, setErrors] = useState({});
+    const [valid, setvalid] = useState(true);
+    const navigate = useNavigate(true);
+    const [formData, setFormData] =  useState({
+        fname: "", 
+        lname: "",
+        email: "",
+        password: "", 
+        cpassword:""
+    })
+
+
+
+
     return (
             <div className="account_container">
                 <div className="account_header">
@@ -17,10 +33,10 @@ const Account = () => {
                     </div>}
                     
                     <div className="input">
-                        <input type="email" placeholder="Email Id" />
+                        <input  value={username} onChange={e=>setUsername(e.target.value)} type="email" placeholder="Email Id" />
                     </div>
                     <div className="input">
-                        <input type="password" placeholder="Password" />
+                        <input value={password} onChange={e=>setPassword(e.target.value)}type="password" placeholder="Password" />
                     </div>
                 </div>
                 {action ==="Sign Up"? <div></div>:<div className="forgot-password">Lost Password? <span>Click Here!</span></div>
