@@ -46,6 +46,15 @@ a {
     font-weight: bold;
 
 }
+span.b_logo li Link{
+    font-family:comic sans-serif;
+
+}
+
+.b_logo li a {
+    font-family:comic sans-serif;
+
+  }
 
 .nav-links{
     display: flex;
